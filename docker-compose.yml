@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  redis:
+    image: redis:alpine
+  addok:
+    build: ./addok
+    # If docker runs behind proxy
+     # args:
+     # http_proxy: 'http://bloody_proxy_IP:3128'
+     # https_proxy: 'http://bloody_proxy_IP:3128'
+    links:
+      - redis
+    ports:
+      - 7878:7878
+    volumes:
+      - ./addok-data:/data
+
+    
