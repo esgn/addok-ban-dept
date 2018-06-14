@@ -17,3 +17,11 @@ Loading the dataset might take a minute or more. Use `docker logs` to check the 
 ## Sample script for departement 31
 
 A sample set up and run script is provided (`sample-run.sh`) to automate the setup and running of the image.
+
+## CSV geocoding
+
+Sample request for geocoding data. More information [here](https://github.com/addok/addok-csv)
+
+```
+http --timeout 600 -f POST https://localhost:7878/search/csv/ columns='nom_rue' citycode='code_insee_commune' data@togeocode.csv
+```
