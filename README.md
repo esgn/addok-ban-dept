@@ -31,7 +31,7 @@ http://localhost:7878/search?q=rue+1814+toulouse
 Sample request for geocoding data. More information [here](https://github.com/addok/addok-csv)
 
 ```
-http --timeout 600 -f POST http://localhost:7878/search/csv/ columns='nom_rue' citycode='code_insee_commune' data@togeocode.csv
+http --timeout 300 -f POST http://localhost:7878/search/csv/ columns='nom_rue' citycode='code_insee_commune' data@togeocode.csv
 ```
 ## Advanced parameters
 
