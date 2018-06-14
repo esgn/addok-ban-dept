@@ -18,7 +18,7 @@ Loading the dataset might take a minute or more. Use `docker logs` to check the 
 
 A sample set up and run script is provided (`sample-run.sh`) to automate the setup and running of the image.
 
-## Sample query
+## Sample queries
 
 ### Adress geocoding
 
