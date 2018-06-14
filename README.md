@@ -33,3 +33,6 @@ Sample request for geocoding data. More information [here](https://github.com/ad
 ```
 http --timeout 600 -f POST http://localhost:7878/search/csv/ columns='nom_rue' citycode='code_insee_commune' data@togeocode.csv
 ```
+## Advanced parameters
+
+Advanced paramaters are defined in `docker-compose.yml` (GUNICORN_TIMEOUT and GUNICORN_WORKERS)
