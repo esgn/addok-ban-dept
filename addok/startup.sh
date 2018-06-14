@@ -12,4 +12,4 @@ redis-cli -h redis set address_source "$filename"
 
 rm $filename
 
-gunicorn addok.http.wsgi -b 0.0.0.0:7878
+gunicorn addok.http.wsgi -w $GUNICORN_WORKERS --timeout $GUNICORN_TIMEOUT --bind 0.0.0.0:7878

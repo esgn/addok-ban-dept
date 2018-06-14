@@ -13,9 +13,11 @@ RUN pip install gunicorn
 
 COPY addok.conf /app
 COPY startup.sh /bin
+RUN mkdir /var/log/addok
 
 ENV ADDOK_CONFIG_MODULE /app/addok.conf
 ENV REDIS_HOST redis
+ENV ADDOK_LOG_DIR /var/log/addok/
 
 EXPOSE 7878
 

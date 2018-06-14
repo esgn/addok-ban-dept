@@ -15,5 +15,8 @@ services:
       - 7878:7878
     volumes:
       - ./addok-data:/data
+    environment:
+      GUNICORN_WORKERS: 3
+      GUNICORN_TIMEOUT: 60
 
     
