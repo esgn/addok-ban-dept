@@ -1,6 +1,6 @@
 # addok-ban-dept
 
-A docker image for running an [addok](https://github.com/addok/addok)  instance with a departemental dataset of the [BAN](http://adresse.data.gouv.fr/). Only designed to rapidly deploy a geocoding instance for test purposes.
+A docker image for running an [addok](https://github.com/addok/addok)  instance with a departemental dataset of the [BAN](http://adresse.data.gouv.fr/). Only designed to rapidly deploy a geocoding instance for test purposes. The addok instance will be available at http://localhost:7878/ when deployed.
 
 ## Manual setup and run
 
@@ -18,7 +18,15 @@ Loading the dataset might take a minute or more. Use `docker logs` to check the 
 
 A sample set up and run script is provided (`sample-run.sh`) to automate the setup and running of the image.
 
-## CSV geocoding
+## Sample query
+
+### Adress geocoding
+
+```
+http://localhost:7878/search?q=rue+1814+toulouse
+```
+
+### CSV Geocoding
 
 Sample request for geocoding data. More information [here](https://github.com/addok/addok-csv)
 
