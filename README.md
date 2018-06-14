@@ -20,7 +20,7 @@ A sample set up and run script is provided (`sample-run.sh`) to automate the set
 
 ## Sample queries
 
-### Adress geocoding
+### Address geocoding
 
 ```
 http://localhost:7878/search?q=rue+1814+toulouse
