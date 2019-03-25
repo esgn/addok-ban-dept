@@ -4,11 +4,12 @@ services:
   redis:
     image: redis:alpine
   addok:
-    build: ./addok
-    # If docker runs behind proxy
-     # args:
-     # http_proxy: 'http://bloody_proxy_IP:3128'
-     # https_proxy: 'http://bloody_proxy_IP:3128'
+    build: 
+      context: ./addok
+      # If docker runs behind proxy
+      #args:
+        #http_proxy: 'http://proxy_ip:proxy_port'
+        #https_proxy: 'http://proxy_ip:proxy_port'
     links:
       - redis
     ports:
